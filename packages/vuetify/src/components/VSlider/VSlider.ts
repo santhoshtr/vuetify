@@ -275,7 +275,8 @@ export default mixins<options &
           this.isActive,
           this.isFocused,
           this.onThumbMouseDown,
-          this.onFocus
+          this.onFocus,
+          this.onBlur,
         ),
       ]
     },
@@ -361,6 +362,7 @@ export default mixins<options &
       isFocused: boolean,
       onDrag: Function,
       onFocus: Function,
+      onBlur: Function,
       ref = 'thumb'
     ): VNode {
       const children = [this.genThumb()]
@@ -390,7 +392,7 @@ export default mixins<options &
         },
         on: {
           focus: onFocus,
-          blur: this.onBlur,
+          blur: onBlur,
           keydown: this.onKeyDown,
           keyup: this.onKeyUp,
           touchstart: onDrag,
