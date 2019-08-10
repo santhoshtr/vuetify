@@ -39,9 +39,9 @@
       "header": "### Sizing",
       "desc": "Buttons can be given different sizing options to fit a multitude of scenarios."
     },
-    "outline": {
+    "outlined": {
       "header": "### Outline",
-      "desc": "Outline buttons inherit their borders from the current color applied."
+      "desc": "Outlined buttons inherit their borders from the current color applied."
     },
     "round": {
       "header": "### Round",
